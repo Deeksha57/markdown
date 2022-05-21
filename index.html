@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body >
+    <h1>ooooooh</h1>
+    <script>
+        function myfunc() {
+            alert("hai");
+        }
+    </script>
+    <button onclick="myfunc()">click</button>
+    
+    <form name="test_form" onsubmit="validation()">
+        Name : <input type="text" name="name">
+        password: <input type="text" name="password">
+        <input type="submit" name="submit">
+    </form>
+
+    <script>
+        temp='hello'
+        document.write(`hello woekd ${temp} `)
+        function validation() {
+        var x = document.forms["test_form"]["name"].value;
+        var y = document.forms["test_form"]["password"].value;
+        if(x==""){
+            alert("failed");
+            return flase;
+        }
+        if(y==""){
+            alert("failed");
+            return false;
+        }
+        else{
+            return true;
+        }
+        
+        };
+        
+        
+
+    </script>
+
+</body>
+</html>
